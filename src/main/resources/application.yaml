@@ -1,0 +1,78 @@
+# Default application configuration
+# TODO: Applications are a work in progress. This is safe to ignore for now.
+applications:
+  - id: "gaia"
+    name: "Gaia application"
+    description: "Default application for testing"
+    privacyKeys:
+      - "default-key"
+      - "public"
+      - "priv"
+
+# NOTE: this will almost certainly *not* work on your machine without some tweaking of the `command`'s for each agent
+#
+# Registry of agents we can orchestrate
+registry:
+  test:
+    options:
+      - name: "NAME"
+        type: "string"
+        description: "Test agent name"
+    runtime:
+      type: "executable"
+      command: ["bash", "examples/camel-search-maths/venv.sh", "examples/camel-search-maths/test.py"]
+      environment:
+        - option: "NAME"
+#  search:
+#    # Exposed configuration for consumers of this agent
+#    options:
+#      - name: "OPENAI_API_KEY"
+#        type: "string"
+#        description: "OpenAI API Key"
+#      - name: "GOOGLE_API_KEY"
+#        type: "string"
+#        description: "Google API Key"
+#      - name: "SEARCH_ENGINE_ID"
+#        type: "string"
+#        description: "Google Search Engine ID"
+#
+#    # How this agent is actually orchestrated locally
+#    runtime:
+#      type: "executable"
+#      command: [ "bash", "examples/camel-search-maths/venv.sh", "examples/camel-search-maths/mcp_example_camel_search.py" ]
+#
+#      environment:
+#        - name: "API_KEY"
+#          from: "OPENAI_API_KEY"
+#        - option: "GOOGLE_API_KEY"
+#        - option: "SEARCH_ENGINE_ID"
+  math:
+    options:
+      - name: "OPENAI_API_KEY"
+        type: "string"
+        description: "OpenAI API Key"
+
+    runtime:
+      type: "executable"
+      command: [ "bash", "examples/camel-search-maths/venv.sh", "examples/camel-search-maths/mcp_example_camel_math.py" ]
+      environment:
+        - name: "API_KEY"
+          from: "OPENAI_API_KEY"
+  interface:
+    options:
+      - name: "OPENAI_API_KEY"
+        type: "string"
+        description: "OpenAI API Key"
+
+    runtime:
+      type: "executable"
+      command: [ "bash", "examples/camel-search-maths/venv.sh", "examples/camel-search-maths/mcp_example_camel_interface.py" ]
+      environment:
+        - name: "API_KEY"
+          from: "OPENAI_API_KEY"
+
+# Uncomment to configure an external application source
+# applicationSource:
+#   type: "http"
+#   url: "https://example.com/applications"
+#   refreshIntervalSeconds: 3600
