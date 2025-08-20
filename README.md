@@ -1,4 +1,4 @@
-# Anemoi: A Semi-Centralized Multi-agent Systems Based on Agent-to-Agent Communication MCP server
+# Anemoi: A Semi-Centralized Multi-agent Systems Based on Agent-to-Agent Communication MCP server from Coral Protocol
 
 **Anemoi** is a semi-centralized multi-agent system (MAS) built on a **Agent-to-Agent (A2A) communication MCP server**.
 Unlike traditional **context-engineering + centralized** paradigms, Anemoi introduces **structured, direct inter-agent communication** — enabling agents to collaborate much like a real-world team.
