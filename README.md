@@ -3,7 +3,7 @@
 **Anemoi** is a semi-centralized multi-agent system (MAS) built on a **Agent-to-Agent (A2A) communication MCP server**.
 Unlike traditional **context-engineering + centralized** paradigms, Anemoi introduces **structured, direct inter-agent communication** — enabling agents to collaborate much like a real-world team.
 
-🌬️ *Like winds connecting distant lands, Anemoi enables agents to communicate directly in a semi-centralized network, achieving scalable coordination and seamless information flow.*
+🌀 *Like winds connecting distant lands, Anemoi enables agents to communicate directly in a semi-centralized network, achieving scalable coordination and seamless information flow.*
 
 <p align="center">
   <img src="Anemoi/images/Anemoi_semi.png" alt="Anemoi Concept" width="70%">
