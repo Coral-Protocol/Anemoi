@@ -33,7 +33,30 @@ Unlike traditional **context-engineering + centralized** paradigms, Anemoi intro
 
 ---
 
-## Reproduction
+## 📄 Publication
+
+Our work has been released on arXiv:
+
+👉 [Anemoi: A Semi-Centralized Multi-agent Systems Based on Agent-to-Agent Communication MCP server from Coral Protocol](https://arxiv.org/abs/2508.17068)
+
+If you find this project useful, please consider citing our paper:
+
+```
+
+@article{ren2025anemoi,
+  title={Anemoi: A Semi-Centralized Multi-agent Systems Based on Agent-to-Agent Communication MCP server from Coral Protocol},
+  author={Ren, Xinxing and Forder, Caelum and Zang, Qianbo and Tahir, Ahsen and Georgio, Roman J. and Deb, Suman and Carroll, Peter and Gürcan, Önder and Guo, Zekun},
+  journal={arXiv preprint arXiv:2508.17068},
+  year={2025},
+  url={https://arxiv.org/abs/2508.17068}
+}
+
+
+```
+
+---
+
+## 🧪 Reproduction
 
 Set up environment variables:
 
